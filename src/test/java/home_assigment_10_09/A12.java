@@ -1,36 +1,26 @@
-package automation_code_Nata;
+package home_assigment_10_09;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-
-public class My_secont {
+public class A12 {
 
 	public static void main(String[] args) {
+		WebDriverManager.firefoxdriver().setup();
+		WebDriver driver1 = new FirefoxDriver();
+		driver1.manage().window().maximize();
+		driver1.get("https://www.flytap.com");
+		
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
-		driver.get("http://google.com");
+		driver.get("https://www.flytap.com");
 		driver.manage().window().maximize();
 		
-		
-		
-		WebDriverManager.edgedriver().setup();
-		WebDriver driver1 = new EdgeDriver();
-		driver1.get("https://app.grammarly.com");
-		driver1.manage().window().maximize();
-		
-		
-		driver1.quit();
 		driver.quit();
-		
-	    
-		
-		
-		
-		
-
+		driver1.quit();
+	
 	}
 
 }
