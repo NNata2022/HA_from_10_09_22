@@ -19,8 +19,9 @@ public class A22 {
 		driver.get("https://www.etsy.com/");
 		driver2.manage().window().maximize();
 		
-		driver2.quit();
 		driver.quit();
+		driver2.quit();
+		
 
 	}
 

@@ -16,8 +16,9 @@ public class A23 {
 		
 		WebDriverManager.firefoxdriver().setup();
 		WebDriver driver2 = new FirefoxDriver();
-		driver.get("https://www.vox.com");
 		driver2.manage().window().maximize();
+		driver.get("https://www.vox.com");
+		
 		
 		driver2.quit();
 		driver.quit();
