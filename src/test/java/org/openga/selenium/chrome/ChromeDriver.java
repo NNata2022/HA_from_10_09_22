@@ -14,4 +14,9 @@ public class ChromeDriver {
 		return null;
 	}
 
+	public void get(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

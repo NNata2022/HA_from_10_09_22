@@ -1,7 +1,7 @@
 package automation_code_Nata;
 
 import org.openga.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -12,7 +12,7 @@ public class MyHW {
 	ChromeDriver driver = new ChromeDriver();
 
 	WebDriverManager.firefoxdriver().setup();
-	driver1 = new FirefoxDriver();
+	FirefoxDriver driver1 = new FirefoxDriver();
 	driver.get("https://oldnavy.gap.com/");
 	
 	
